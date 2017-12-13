@@ -11,9 +11,9 @@ if(gamepad_is_connected(1)){
 
 //show_debug_message(string(pers2));
 
-pers2.hinput_=round(gamepad_axis_value(0,gp_axislh));
-pers2.vinput_=gamepad_button_check_pressed(0,gp_face1);
-pers2.kick=gamepad_button_check_pressed(0,gp_face3);
+pers2.hinput_=keyboard_check(vk_numpad6)-keyboard_check(vk_numpad4);
+pers2.vinput_=keyboard_check(vk_numpad8);
+pers2.kick=keyboard_check_pressed(vk_numpad0);
 
 
 if(keyboard_check(vk_escape)){
