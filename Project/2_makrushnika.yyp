@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "0a1d25ec-d4bd-48bd-9818-38ac3c01b331",
-            "Value": {
-                "id": "b410bfa6-95ea-4572-a761-b4ffebf2cffa",
-                "resourcePath": "objects\\obj_per2\\obj_per2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "0db06112-61be-4bf4-a4fc-c83e75d3bc3d",
             "Value": {
                 "id": "a2ceca23-7f67-45b6-8caa-9b78bdf4ad1b",
@@ -151,18 +143,10 @@
             }
         },
         {
-            "Key": "6df80c7a-73e7-47dd-b3bb-e0d62b03acb5",
-            "Value": {
-                "id": "80e5a503-c60b-448f-bc65-bfdc8a746ca9",
-                "resourcePath": "scripts\\scr_push\\scr_push.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6e900c6e-7959-4624-b705-e76bcbaae7aa",
             "Value": {
                 "id": "7f4c5732-e5aa-410a-84aa-a79f212bd5f4",
-                "resourcePath": "objects\\obj_per1\\obj_per1.yy",
+                "resourcePath": "objects\\obj_players\\obj_players.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -196,14 +180,6 @@
                 "id": "0ff6dc96-58bc-46a5-92b8-c3941f2e9996",
                 "resourcePath": "views\\7be4cdda-544f-4814-ac5b-2f14102519b1.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "7ce1ce67-7095-4ece-910e-bd65c879d96a",
-            "Value": {
-                "id": "c18773ec-bcee-41e3-a09c-7f607ab6c7e0",
-                "resourcePath": "sprites\\spr_per1\\spr_per1.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -300,14 +276,6 @@
                 "id": "a47a7314-df0f-47f6-8958-98ed26bd7190",
                 "resourcePath": "views\\b0f8ce8a-6b6d-42bf-b59c-1f71f08a0c3a.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "b4f9926a-b9a7-4902-aa06-eae87ace969d",
-            "Value": {
-                "id": "3992d2ce-dc60-499c-a7d1-3d939539ea9a",
-                "resourcePath": "sprites\\spr_per2\\spr_per2.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -432,8 +400,7 @@
         }
     ],
     "script_order": [
-        "2360bb3b-135f-45b1-b957-93a17a18313a",
-        "6df80c7a-73e7-47dd-b3bb-e0d62b03acb5"
+        "2360bb3b-135f-45b1-b957-93a17a18313a"
     ],
     "tutorial": ""
 }

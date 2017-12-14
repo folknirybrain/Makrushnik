@@ -9,15 +9,13 @@ max_speed=10;
 hinput_=0;
 vinput_=0;
 kick=0;
-hspeed_push=0;
-vspeed_push=0;
 AI="idle";
 kick_power=0;
-kick_power_max=20;
+kick_power_max=30;
 sprite_id_="yellow";
 direction_=1;
 knife_=false;
-
 health_=100;
+hspeed_push=0;
 
 //image_speed=1;

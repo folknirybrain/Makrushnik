@@ -1,6 +1,8 @@
-/// @description Insert description here
+/// @description Move
 // You can write your code in this edito
-//var hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
+
+
+
 if(AI=="idle"){
 	if (hinput_!=0){	
 		hspeed_+=hinput_*acceleration_;
@@ -8,54 +10,47 @@ if(AI=="idle"){
 	}else{
 		hspeed_=lerp(hspeed_,0,0.5);
 	}	
-	
-}
-if(hinput_==0&&vspeed_==0){
-	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_idle");
-	image_speed=1;
-}else if(hinput_!=0&&vspeed_==0){
-	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
-	image_speed=1;
 }
 
-if(hspeed_>0){
-		
+//Animation
+	if(hinput_==0&&vspeed_==0){
+		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_idle");
+		image_speed=1;
+	}else if(hinput_!=0&&vspeed_==0){
+		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
+		image_speed=1;
+	}
+
+
+	if(hspeed_>0){		
 		image_xscale=1;
 		direction_=1;
-	}else if(hspeed_<0){
-		
-		direction_=-1;
+	}else if(hspeed_<0){		
 		image_xscale=-1;
-}
+		direction_=-1;
+	}
+	
 
 if(place_meeting(x+hspeed_,y,obj_wall)){
 	while !place_meeting(x+sign(hspeed_),y,obj_wall){
-		x+=sign(hspeed_);
-		
+		x+=sign(hspeed_);		
 	}
 		if(vspeed_==0){
 			sprite_index=asset_get_index("spr_"+sprite_id_+"_general_idle");
 			image_speed=1;
-		}
-		
+		}	
 	hspeed_=0;
 	kick_power=0;
 	hspeed_push=0;
-	//AI="idle"
 }
 
 x+=hspeed_;
 
 if(!place_meeting(x,y+1,obj_wall)){
 	vspeed_+=gravity_;
-	
-	//sprite_index=spr_yellow_general_jump;
-	//image_speed=;
-	//image_index=1;
 }else{
 	if(vinput_!=0){		
 		vspeed_=-jump_power_;
-		//alarm[1]=2;
 		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_jump");
 		image_index=0;
 		image_speed=1;		
@@ -73,9 +68,12 @@ if(place_meeting(x,y+vspeed_,obj_wall)){
 
 y+=vspeed_
 
-if(kick&&AI!="panch"){
+if(kick&&AI!="panch"&&AI!="down"){
 	AI="panch";	
 	kick_power=kick_power_max;
+	alarm[3]=100;	
+	//var time_diff=date_current_datetime()-obj_main.creation_time;
+	//show_debug_message(string_format(time_diff,10,10));
 	
 }
 
@@ -83,33 +81,26 @@ if(AI=="panch"){
 	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
 	image_speed=0;
 	image_index=10;
-	show_debug_message(string("spr_"+sprite_id_+"_general_idle"));	
+	
 	if(kick_power!=0){
-		hspeed_+=direction_*kick_power;
-		hspeed_=clamp(hspeed_,-max_speed*5,max_speed*5);	
+		hspeed_+=direction_*3*acceleration_;
+		hspeed_=clamp(hspeed_,-kick_power,kick_power);	
 	}else{		
 		hspeed_=lerp(hspeed_,0,0.8);	
 	}
-	if(hspeed_<=-max_speed*5||hspeed_>=max_speed*5){
+	if(hspeed_<=-kick_power||hspeed_>=kick_power){
 		kick_power=0;
-		//hspeed_=lerp(hspeed_,0,2);		
 	}
-	//show_debug_message(string(hspeed_)+string(id)+"   "+string(direction_));	
-	
-	
-		
-//		instance_create_layer(1009,175,"Instances",obj_knife);
-	
-	
-	
-	
-//	hspeed_push=lerp(hspeed_push,0,0.3);
-//	vspeed_push=lerp(vspeed_push,0,0.5);
 	if(hspeed_==0){
 		AI="idle";
+		alarm[3]=0;
 	}
 }
 if(AI=="down"){
+	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
+	image_speed=0;
+	image_index=10;
+	//show_debug_message(string(hspeed_push));	
 	if(hspeed_push!=0){
 		hspeed_+=hspeed_push*kick_power_max;
 		hspeed_=clamp(hspeed_,-max_speed*7,max_speed*7);	
@@ -125,7 +116,3 @@ if(AI=="down"){
 	}
 		
 }
-
-
-
-//scr_push();
