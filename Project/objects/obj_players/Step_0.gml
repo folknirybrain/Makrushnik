@@ -23,10 +23,10 @@ if(AI=="idle"){
 
 
 	if(hspeed_>0){		
-		image_xscale=1;
+		image_xscale=0.8;
 		direction_=1;
 	}else if(hspeed_<0){		
-		image_xscale=-1;
+		image_xscale=-0.8;
 		direction_=-1;
 	}
 	
