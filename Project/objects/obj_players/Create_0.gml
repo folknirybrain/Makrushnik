@@ -4,7 +4,7 @@ hspeed_=0;
 vspeed_=0;
 gravity_=1.2;
 acceleration_=1.5;
-jump_power_=25;
+jump_power_=23;
 max_speed=10;
 hinput_=0;
 vinput_=0;
@@ -19,5 +19,5 @@ health_=100;
 hspeed_push=0;
 
 //image_speed=1;
-image_xscale = 0.8;
-image_yscale = 0.8;
+image_xscale = 0.7;
+image_yscale = 0.7;

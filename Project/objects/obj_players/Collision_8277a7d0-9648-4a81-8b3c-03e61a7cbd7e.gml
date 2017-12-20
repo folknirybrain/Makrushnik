@@ -24,7 +24,7 @@ if(AI=="panch"){
 				//show_debug_message(string(lengthdir_x(1,direct)))
 				other.AI="down";
 				if(!instance_exists(obj_knife)){
-					instance_create_layer(1009,175,"Instances",obj_knife);
+					instance_create_layer(1010,513,"Instances",obj_knife);
 					other.knife_=false;
 				}
 			}			
@@ -33,7 +33,7 @@ if(AI=="panch"){
 			//show_debug_message(string(lengthdir_x(1,direct)))
 			other.AI="down";
 			if(!instance_exists(obj_knife)){
-				instance_create_layer(1009,175,"Instances",obj_knife);
+				instance_create_layer(1010,513,"Instances",obj_knife);
 				other.knife_=false;
 			}
 		}

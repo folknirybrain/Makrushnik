@@ -1,9 +1,9 @@
 creation_time=date_current_datetime();
-per1=instance_create_layer(100,990,"Instances",obj_players);
+per1=instance_create_layer(100,895,"Instances",obj_players);
 per1.sprite_id_="yellow";
-per2=instance_create_layer(100,990,"Instances",obj_players);
+per2=instance_create_layer(100,895,"Instances",obj_players);
 per2.sprite_id_="red";
-per3=instance_create_layer(130,990,"Instances",obj_players);
+per3=instance_create_layer(130,895,"Instances",obj_players);
 per3.sprite_id_="blue";
 
 
