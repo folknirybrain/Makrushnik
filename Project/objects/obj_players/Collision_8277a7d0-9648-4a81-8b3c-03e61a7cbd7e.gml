@@ -1,3 +1,5 @@
+
+/// @description Collision_between_players
 /*var direct=point_direction(x,y,other.x,other.y);
 var direct_y=point_direction(0,100,0,0);
 if(kick&&AI<>"panch"&&AI<>"knife"&&other.AI<>"panch"){
@@ -16,28 +18,35 @@ show_debug_message(string(direct)+"   "+string(other.hspeed_push))
 
 if(AI=="panch"){
 	//var direct=point_direction(x,y,other.x,other.y);	
-	if(!knife_&&other.AI!="down"){
+	if(other.AI!="down"){
 		if(other.alarm[3]>=0){
 			if(alarm[3]<other.alarm[3]){
 				show_debug_message(string(alarm[3])+string(sprite_id_)+" other "+string(other.alarm[3])+string(other.sprite_id_));
 				other.hspeed_push=direction_;
 				//show_debug_message(string(lengthdir_x(1,direct)))
 				other.AI="down";
-				if(!instance_exists(obj_knife)){
-					instance_create_layer(1010,513,"Instances",obj_knife);
+				if(other.knife_){
+					//instance_create_layer(1010,513,"Instances",obj_knife);
 					other.knife_=false;
+					obj_knife.x=1010;
+					obj_knife.y=513;
 				}
 			}			
 		}else{			
 			other.hspeed_push=direction_;
 			//show_debug_message(string(lengthdir_x(1,direct)))
 			other.AI="down";
-			if(!instance_exists(obj_knife)){
-				instance_create_layer(1010,513,"Instances",obj_knife);
+			if(other.knife_){
+				//instance_create_layer(1010,513,"Instances",obj_knife);
 				other.knife_=false;
+				obj_knife.x=1010;
+					obj_knife.y=513;
 			}
 		}
-	}else if(knife_&&other.AI!="down"){
+	}
+	
+}
+if(attack&&knife_&&other.AI!="down"){
 		other.health_-=20;
 		other.hspeed_push=direction_;
 		other.AI="down";
@@ -45,6 +54,4 @@ if(AI=="panch"){
 			instance_deactivate_object(other);	
 			alarm[0]=5;
 		}
-	}
-	
 }

@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "d36de2b8-1cfd-4306-8017-74bc7adc6620",
+            "Value": {
+                "id": "113f8de2-9afd-4393-8e2e-a6c007a26be4",
+                "resourcePath": "sprites\\spr_yellow_general_attack\\spr_yellow_general_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d6791634-2d74-4122-a11b-1987dfb4bd28",
             "Value": {
                 "id": "4770b892-6b51-41e6-9508-671adb6ceaf1",

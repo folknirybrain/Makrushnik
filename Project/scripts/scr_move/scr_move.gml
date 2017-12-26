@@ -4,10 +4,19 @@ var pers3=argument2;
 pers1.hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
 pers1.vinput_=keyboard_check_pressed(vk_up);
 pers1.kick=keyboard_check_pressed(vk_space);
+if(gamepad_is_connected(4)){
+	pers1.hinput_=round(gamepad_axis_value(4,gp_axislh));
+	pers1.vinput_=gamepad_button_check_pressed(4,gp_face1);
+	pers1.kick=gamepad_button_check_pressed(4,gp_face2);
+	pers1.attack=gamepad_button_check_pressed(4,gp_face3);
+	
+}
 if(gamepad_is_connected(1)){
-	pers1.hinput_=round(gamepad_axis_value(1,gp_axislh));
-	pers1.vinput_=gamepad_button_check_pressed(1,gp_face1);
-	pers1.kick=gamepad_button_check_pressed(1,gp_face3);
+	pers2.hinput_=round(gamepad_axis_value(1,gp_axislh));
+	pers2.vinput_=gamepad_button_check_pressed(1,gp_face1);
+	pers2.kick=gamepad_button_check_pressed(1,gp_face2);
+	pers2.attack=gamepad_button_check_pressed(1,gp_face3);
+	
 }
 
 //show_debug_message(string(pers2));

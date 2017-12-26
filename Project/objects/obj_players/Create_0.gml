@@ -9,6 +9,7 @@ max_speed=10;
 hinput_=0;
 vinput_=0;
 kick=0;
+attack=0;
 AI="idle";
 kick_power=0;
 kick_power_max=30;

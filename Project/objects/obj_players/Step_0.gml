@@ -1,8 +1,5 @@
 /// @description Move
 // You can write your code in this edito
-
-
-
 if(AI=="idle"){
 	if (hinput_!=0){	
 		hspeed_+=hinput_*acceleration_;
@@ -11,12 +8,24 @@ if(AI=="idle"){
 		hspeed_=lerp(hspeed_,0,0.5);
 	}	
 }
-
 //Animation
-	if(hinput_==0&&vspeed_==0){
+	if(attack&&knife_){	
+		alarm[4]=30;
+		if(sprite_id_=="yellow"){
+			sprite_index=asset_get_index("spr_"+sprite_id_+"_general_attack");
+			image_speed=0.4;
+		}else{
 		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_idle");
 		image_speed=1;
-	}else if(hinput_!=0&&vspeed_==0){
+		}
+	}
+
+	
+	if(hinput_==0&&vspeed_==0&&alarm[4]<=10){
+		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_idle");
+		image_speed=1;
+		
+	}else if(hinput_!=0&&vspeed_==0&&alarm[4]<=10){
 		sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
 		image_speed=1;
 	}
@@ -77,6 +86,8 @@ if(kick&&AI!="panch"&&AI!="down"){
 	
 }
 
+
+
 if(AI=="panch"){	
 	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
 	image_speed=0;
@@ -96,6 +107,11 @@ if(AI=="panch"){
 		alarm[3]=0;
 	}
 }
+
+
+
+
+
 if(AI=="down"){
 	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
 	image_speed=0;
@@ -115,4 +131,9 @@ if(AI=="down"){
 		AI="idle";
 	}
 		
+}
+
+if(knife_){
+	obj_knife.x=x+20;
+	obj_knife.y=y-120;
 }
