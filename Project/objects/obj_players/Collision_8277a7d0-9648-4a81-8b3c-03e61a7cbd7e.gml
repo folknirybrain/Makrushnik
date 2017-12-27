@@ -52,6 +52,7 @@ if(attack&&knife_&&other.AI!="down"){
 		other.AI="down";
 		if(other.health_<=0){
 			instance_deactivate_object(other);	
-			alarm[0]=5;
+			//alarm[0]=5;
 		}
+		//attack=0;
 }
