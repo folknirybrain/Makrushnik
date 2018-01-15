@@ -1,12 +1,12 @@
 creation_time=date_current_datetime();
 per1=instance_create_layer(100,256,"Characters",obj_players);
 per1.sprite_id_="yellow";
-per2=instance_create_layer(100,895,"Characters",obj_players);
+per2=instance_create_layer(100,870,"Characters",obj_players);
 per2.sprite_id_="red";
 per3=instance_create_layer(1880,256,"Characters",obj_players);
 per3.sprite_id_="blue";
 per3.image_xscale=-1;
-per4=instance_create_layer(1880,895,"Characters",obj_players);
+per4=instance_create_layer(1880,870,"Characters",obj_players);
 per4.sprite_id_="green";
 per4.image_xscale=-1;
 
