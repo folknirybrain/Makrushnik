@@ -41,3 +41,4 @@ pers4.kick=keyboard_check_pressed(vk_numpad2);
 if(keyboard_check(vk_escape)){
 	game_end();	
 }
+//show_debug_message("[[[[[[[[[[[[[[[[[[[[[[[[["+string(gamepad_is_connected(4)));
