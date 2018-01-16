@@ -48,6 +48,7 @@ if(AI=="panch"){
 }
 if(attack&&knife_&&other.AI!="down"){
 		other.health_-=20;
+		score_+=10;
 		other.hspeed_push=direction_;
 		other.AI="down";
 		if(other.health_<=0){

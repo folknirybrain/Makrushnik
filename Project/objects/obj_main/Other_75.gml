@@ -15,7 +15,16 @@ case "gamepad discovered":                     // A game pad has been discovered
 	       player[i].pad_num = pad;
 		   break;
 		}
+		if(i==3){
+			for(var j=0;j<4;j++){
+				if player[j].pad_num>19{
+					player[j].pad_num = pad;
+					break;
+				}
+			}
+		}
 	}
+	
     break;
 case "gamepad lost":                           // Gamepad has been removed or otherwise disabled
     var pad = async_load[? "pad_index"];       // Get the pad index
