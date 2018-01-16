@@ -1,4 +1,5 @@
 creation_time=date_current_datetime();
+
 for(var i=0;i<4;i++){
 	player[i]=noone;
 }
@@ -25,6 +26,7 @@ for(var i=0;i<4;i++){
 		}	
      }
 }	
+
 
 h1=instance_create_layer(150,980,"Characters",obj_health);
 h2=instance_create_layer(150,1020,"Characters",obj_health);
