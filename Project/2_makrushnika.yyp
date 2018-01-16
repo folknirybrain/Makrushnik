@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "128c8535-dada-4f6d-9405-8c6a5dc5e7dd",
+            "Value": {
+                "id": "ff14464a-86f6-4098-b3cb-e6d56cf2f076",
+                "resourcePath": "scripts\\scr_create_game\\scr_create_game.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "14d1c21b-1d57-4ea1-864a-455fc575a6a0",
             "Value": {
                 "id": "82a3c05f-ce5a-424f-b933-fc7b41fdd580",
@@ -156,6 +164,14 @@
                 "id": "e7e6da9e-249a-4d06-bafb-b3e82f291cec",
                 "resourcePath": "objects\\obj_knife\\obj_knife.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "435d273c-c923-40d7-8ded-8ed174b8e89f",
+            "Value": {
+                "id": "bfab29c6-2062-4220-a667-ac1ad15ed929",
+                "resourcePath": "fonts\\AAA\\AAA.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -407,6 +423,14 @@
             }
         },
         {
+            "Key": "c63c797b-87e5-4ea4-b9de-67212e3aba70",
+            "Value": {
+                "id": "eacacf18-0f76-46ac-843d-c2af75bf02f5",
+                "resourcePath": "scripts\\scr_load\\scr_load.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c83830ae-0c49-4e4e-a040-63542a30806b",
             "Value": {
                 "id": "915b4280-f3e5-441e-beaa-f354991e29b5",
@@ -544,7 +568,9 @@
         }
     ],
     "script_order": [
-        "2360bb3b-135f-45b1-b957-93a17a18313a"
+        "2360bb3b-135f-45b1-b957-93a17a18313a",
+        "c63c797b-87e5-4ea4-b9de-67212e3aba70",
+        "128c8535-dada-4f6d-9405-8c6a5dc5e7dd"
     ],
     "tutorial": ""
 }

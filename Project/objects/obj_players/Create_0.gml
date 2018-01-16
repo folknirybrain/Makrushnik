@@ -20,4 +20,5 @@ health_=100;
 hspeed_push=0;
 pad_num=0;
 score_=0;
+
 //image_speed=1;

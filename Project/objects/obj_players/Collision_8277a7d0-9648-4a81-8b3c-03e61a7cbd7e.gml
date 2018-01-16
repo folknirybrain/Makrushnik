@@ -21,7 +21,7 @@ if(AI=="panch"){
 	if(other.AI!="down"){
 		if(other.alarm[3]>=0){
 			if(alarm[3]<other.alarm[3]){
-				show_debug_message(string(alarm[3])+string(sprite_id_)+" other "+string(other.alarm[3])+string(other.sprite_id_));
+				//show_debug_message(string(alarm[3])+string(sprite_id_)+" other "+string(other.alarm[3])+string(other.sprite_id_));
 				other.hspeed_push=direction_;
 				//show_debug_message(string(lengthdir_x(1,direct)))
 				other.AI="down";
@@ -40,7 +40,7 @@ if(AI=="panch"){
 				//instance_create_layer(1010,513,"Instances",obj_knife);
 				other.knife_=false;
 				obj_knife.x=1010;
-					obj_knife.y=513;
+				obj_knife.y=513;
 			}
 		}
 	}
