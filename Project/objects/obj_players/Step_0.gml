@@ -1,16 +1,7 @@
 /// @description Move
 // You can write your code in this edito
-if(pad_num<13){
-	hinput_=round(gamepad_axis_value(pad_num,gp_axislh));
-	vinput_=gamepad_button_check_pressed(pad_num,gp_face1);
-	kick=gamepad_button_check_pressed(pad_num,gp_face2);
-	attack=gamepad_button_check_pressed(pad_num,gp_face3);
-}else if(pad_num==20){
-	hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
-	vinput_=keyboard_check_pressed(vk_up);
-	kick=keyboard_check_pressed(vk_space);
-	attack=keyboard_check_pressed(vk_control);
-}
+scr_move(pad_num);
+
 
 if(AI=="idle"){
 	if (hinput_!=0){	

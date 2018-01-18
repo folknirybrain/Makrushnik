@@ -18,7 +18,7 @@ direction_=1;
 knife_=false;
 health_=100;
 hspeed_push=0;
-pad_num=0;
 score_=0;
 
-//image_speed=1;
+pad_num=0;
+pad_type="";
