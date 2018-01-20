@@ -7,6 +7,7 @@ draw_text(140,30,string(player[0].score_));
 draw_text(690,30,string(player[1].score_));
 draw_text(1220,30,string(player[2].score_));
 draw_text(1700,30,string(player[3].score_));
+/*
 var j=0;
 for (var i = 0; i < 12; i++;)
 {
@@ -43,3 +44,7 @@ else
    // draw_text(xx, yy + 20, "Gamepad not connected" + string(gamepad_get_description(i)));
     }
 }
+
+ */
+ 
+ 

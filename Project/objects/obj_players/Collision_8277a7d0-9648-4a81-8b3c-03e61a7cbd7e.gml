@@ -1,58 +1,47 @@
 
 /// @description Collision_between_players
-/*var direct=point_direction(x,y,other.x,other.y);
-var direct_y=point_direction(0,100,0,0);
-if(kick&&AI<>"panch"&&AI<>"knife"&&other.AI<>"panch"){
-	other.hspeed_push+=lengthdir_x(50,direct);
-	other.vspeed_push+=lengthdir_y(15,direct_y);
-	other.AI="panch";
-	instance_create_layer(1009,175,"Instances",obj_knife);
-}
-if(kick&&AI=="knife"){
-	instance_deactivate_object(other);	
-	alarm[0]=5;
-}
 
-show_debug_message(string(direct)+"   "+string(other.hspeed_push))
-*/
-
-if(AI=="panch"){
-	//var direct=point_direction(x,y,other.x,other.y);	
+if(AI=="panch"&&other.active){
+	
 	if(other.AI!="down"){
 		if(other.alarm[3]>=0){
-			if(alarm[3]<other.alarm[3]){
-				//show_debug_message(string(alarm[3])+string(sprite_id_)+" other "+string(other.alarm[3])+string(other.sprite_id_));
-				other.hspeed_push=direction_;
-				//show_debug_message(string(lengthdir_x(1,direct)))
+			if(alarm[3]<other.alarm[3]){			
+				other.hspeed_push=direction_;			
 				other.AI="down";
-				if(other.knife_){
-					//instance_create_layer(1010,513,"Instances",obj_knife);
+				if(other.knife_){					
 					other.knife_=false;
-					obj_knife.x=1010;
-					obj_knife.y=513;
+					obj_knife.Knife_find=false;
+					var i=scr_point_distance_max();
+					//show_debug_message("!!!!!"+string(i));
+					obj_knife.x=obj_main.array_point_knife[i,0];
+					obj_knife.y=obj_main.array_point_knife[i,1];
+					
 				}
 			}			
 		}else{			
-			other.hspeed_push=direction_;
-			//show_debug_message(string(lengthdir_x(1,direct)))
+			other.hspeed_push=direction_;		
 			other.AI="down";
-			if(other.knife_){
-				//instance_create_layer(1010,513,"Instances",obj_knife);
+			if(other.knife_){			
 				other.knife_=false;
-				obj_knife.x=1010;
-				obj_knife.y=513;
+				obj_knife.Knife_find=false;
+				var i=scr_point_distance_max();
+					//show_debug_message("!!!!!"+string(i));
+					obj_knife.x=obj_main.array_point_knife[i,0];
+					obj_knife.y=obj_main.array_point_knife[i,1];
 			}
 		}
 	}
 	
 }
-if(attack&&knife_&&other.AI!="down"){
+if(attack&&knife_&&other.AI!="down"&&other.active){
 		other.health_-=20;
 		score_+=10;
 		other.hspeed_push=direction_;
 		other.AI="down";
 		if(other.health_<=0){
-			instance_deactivate_object(other);	
+			//instance_deactivate_object(other);
+			other.active=false;
+			//other.image_alpha=50;
 			//alarm[0]=5;
 		}
 		//attack=0;

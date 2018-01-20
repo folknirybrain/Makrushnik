@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "e5acab10-1d75-4b3a-b6cc-4b4d8414a8c7",
+            "Value": {
+                "id": "a5eeee66-aef3-4f17-85a2-0a40303e7bf1",
+                "resourcePath": "scripts\\scr_point_distance_max\\scr_point_distance_max.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e65e58b0-d40d-447e-977f-f46d049ce767",
             "Value": {
                 "id": "855fb247-66c5-4ff3-8d36-2fe11af8be2f",
@@ -570,7 +578,8 @@
     "script_order": [
         "2360bb3b-135f-45b1-b957-93a17a18313a",
         "c63c797b-87e5-4ea4-b9de-67212e3aba70",
-        "128c8535-dada-4f6d-9405-8c6a5dc5e7dd"
+        "128c8535-dada-4f6d-9405-8c6a5dc5e7dd",
+        "e5acab10-1d75-4b3a-b6cc-4b4d8414a8c7"
     ],
     "tutorial": ""
 }

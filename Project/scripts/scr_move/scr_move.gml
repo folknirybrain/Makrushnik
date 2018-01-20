@@ -16,54 +16,11 @@ if(pad_num_>=0){
 }else if(pad_num_==-1){
 	hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
 	vinput_=keyboard_check_pressed(vk_up);
-	//kick=keyboard_check_pressed(vk_space);
-	if(keyboard_check_direct(vk_space)){
-		show_debug_message("!!!!!!!!!!");
-	}
-	//attack=keyboard_check_pressed(vk_control);	
+	kick=keyboard_check_pressed(vk_space);
+	
+	attack=keyboard_check_pressed(vk_control);	
 }
 
 if(keyboard_check(vk_escape)){
 	game_end();	
 }
-/*
-pers1.hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
-pers1.vinput_=keyboard_check_pressed(vk_up);
-pers1.kick=keyboard_check_pressed(vk_space);
-if(gamepad_is_connected(4)){
-	pers1.hinput_=round(gamepad_axis_value(4,gp_axislh));
-	pers1.vinput_=gamepad_button_check_pressed(4,gp_face1);
-	pers1.kick=gamepad_button_check_pressed(4,gp_face2);
-	pers1.attack=gamepad_button_check_pressed(4,gp_face3);
-	
-}
-
-//show_debug_message(string(gpcount));
-if(gamepad_is_connected(1)){
-	pers2.hinput_=round(gamepad_axis_value(1,gp_axislh));
-	pers2.vinput_=gamepad_button_check_pressed(1,gp_face1);
-	pers2.kick=gamepad_button_check_pressed(1,gp_face2);
-	pers2.attack=gamepad_button_check_pressed(1,gp_face3);
-	
-}
-
-//show_debug_message(string(pers2));
-
-pers2.hinput_=keyboard_check(vk_numpad6)-keyboard_check(vk_numpad4);
-pers2.vinput_=keyboard_check_pressed(vk_numpad8);
-pers2.kick=keyboard_check_pressed(vk_numpad0);
-
-pers3.hinput_=keyboard_check(vk_numpad3)-keyboard_check(vk_numpad1);
-pers3.vinput_=keyboard_check_pressed(vk_numpad5);
-pers3.kick=keyboard_check_pressed(vk_numpad2);
-
-pers4.hinput_=keyboard_check(vk_numpad3)-keyboard_check(vk_numpad1);
-pers4.vinput_=keyboard_check_pressed(vk_numpad5);
-pers4.kick=keyboard_check_pressed(vk_numpad2);
-
-
-if(keyboard_check(vk_escape)){
-	game_end();	
-}
-//show_debug_message("[[[[[[[[[[[[[[[[[[[[[[[[["+string(gamepad_is_connected(4)));
-*/

@@ -1,7 +1,8 @@
 /// @description Move
 // You can write your code in this edito
-scr_move(pad_num);
-
+if active{
+	scr_move(pad_num);
+}
 
 if(AI=="idle"){
 	if (hinput_!=0){	

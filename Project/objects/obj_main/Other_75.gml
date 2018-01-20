@@ -47,7 +47,7 @@ switch(async_load[? "event_type"])
 		show_debug_message(string(gamepad_get_device_count()));
 	break;
 	case "gamepad lost":     
-	    var pad = async_load[? "pad_index"]; 
-		show_debug_message(string(pad)+"   lost it is true))  ");
+	    //var pad = async_load[? "pad_index"]; 
+		//show_debug_message(string(pad)+"   lost it is true))  ");
 		break; 
 }

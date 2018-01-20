@@ -1,6 +1,7 @@
 /// @description collision_with_knife
 // You can write your code in this editor
-if(obj_knife.x==1010){
-knife_=true;
+if((AI=="idle"||AI=="panch")&&!knife_&&!other.Knife_find){
+	knife_=true;
+	other.Knife_find=true;
 }
 //instance_destroy(obj_knife);
