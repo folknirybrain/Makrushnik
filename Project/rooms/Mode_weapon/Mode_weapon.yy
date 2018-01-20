@@ -1,6 +1,6 @@
 
 {
-    "name": "room1",
+    "name": "Mode_weapon",
     "id": "bafa9b17-14cf-407f-84b7-72849b9e993a",
     "creationCodeFile": "",
     "inheritCode": false,

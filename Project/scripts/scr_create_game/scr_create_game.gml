@@ -25,20 +25,20 @@ for(var i=0;i<4;i++){
 			
 			
 		}else if i==1{
-			player[i] = instance_create_layer(100,256,"Characters",obj_players);	//100,895,
+			player[i] = instance_create_layer(100,895,"Characters",obj_players);	//100,895,
 			player[i].sprite_id_="red";	
 			player[i].pad_num=noone;
 			player[i].active=true;
 			
 			
 		}else if i==2{
-			player[i] = instance_create_layer(100,256,"Characters",obj_players);	//1880,256
+			player[i] = instance_create_layer(1880,256,"Characters",obj_players);	//1880,256
 			player[i].sprite_id_="blue";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;
 			player[i].active=true;
 		}else if i==3{
-			player[i] = instance_create_layer(100,256,"Characters",obj_players);	//1880,895,
+			player[i] = instance_create_layer(1880,895,"Characters",obj_players);	//1880,895,
 			player[i].sprite_id_="green";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;

@@ -4,10 +4,15 @@
     "mvc": "1.1",
     "name": "14d1c21b-1d57-4ea1-864a-455fc575a6a0",
     "children": [
-        "0ae68cbb-15ab-4956-9edf-96a627e00ab3",
+        "dcf265ee-18cb-428b-8706-080f7db6870e",
         "d25d1381-5047-495c-bdbb-6540a75e7f94",
         "18211100-82b3-43d1-b571-594e89b5eae5",
-        "7d1d3a47-9900-457b-a299-5e556eed5717"
+        "7d1d3a47-9900-457b-a299-5e556eed5717",
+        "0ae68cbb-15ab-4956-9edf-96a627e00ab3",
+        "0664c1b8-d293-48e0-b60d-3f25e4179118",
+        "e1733560-5a39-45e9-96e8-415e35486862",
+        "f4d2c8bf-0723-45ec-b87d-a418524a6d9f",
+        "15ee5e82-8c29-415f-ab74-17012f99dd85"
     ],
     "filterType": "GMObject",
     "folderName": "Interface",

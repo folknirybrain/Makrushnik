@@ -16,8 +16,7 @@ if(pad_num_>=0){
 }else if(pad_num_==-1){
 	hinput_=keyboard_check(vk_right)-keyboard_check(vk_left);
 	vinput_=keyboard_check_pressed(vk_up);
-	kick=keyboard_check_pressed(vk_space);
-	
+	kick=keyboard_check_pressed(vk_space);	
 	attack=keyboard_check_pressed(vk_control);	
 }
 
