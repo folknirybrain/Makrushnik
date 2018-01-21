@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-//obj_start_game.mode_type=1;
+if(image_index==1){
+	image_index=0
+}

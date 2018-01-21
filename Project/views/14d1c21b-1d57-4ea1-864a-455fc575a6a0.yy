@@ -11,8 +11,9 @@
         "0ae68cbb-15ab-4956-9edf-96a627e00ab3",
         "0664c1b8-d293-48e0-b60d-3f25e4179118",
         "e1733560-5a39-45e9-96e8-415e35486862",
-        "f4d2c8bf-0723-45ec-b87d-a418524a6d9f",
-        "15ee5e82-8c29-415f-ab74-17012f99dd85"
+        "15ee5e82-8c29-415f-ab74-17012f99dd85",
+        "114bf1d5-a748-423e-aaad-b134c28fd6c3",
+        "b04af1cc-ef0d-470d-891f-86bb921fb84e"
     ],
     "filterType": "GMObject",
     "folderName": "Interface",

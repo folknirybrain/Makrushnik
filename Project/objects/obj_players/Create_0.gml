@@ -22,6 +22,7 @@ active=true;
 score_=0;
 
 
+
 pad_num=0;
 pad_type="";
 show_debug_message("yooohhhhuuuuu");

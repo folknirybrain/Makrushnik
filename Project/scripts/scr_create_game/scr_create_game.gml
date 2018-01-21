@@ -32,13 +32,13 @@ for(var i=0;i<4;i++){
 			
 			
 		}else if i==2{
-			player[i] = instance_create_layer(1880,256,"Characters",obj_players);	//1880,256
+			player[i] = instance_create_layer(1792,256,"Characters",obj_players);	//1880,256
 			player[i].sprite_id_="blue";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;
 			player[i].active=true;
 		}else if i==3{
-			player[i] = instance_create_layer(1880,895,"Characters",obj_players);	//1880,895,
+			player[i] = instance_create_layer(1792,895,"Characters",obj_players);	//1880,895,
 			player[i].sprite_id_="green";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;
@@ -63,14 +63,14 @@ for(var i=0;i<4;i++){
 			player[i].active=true;
 			player[i].image_xscale=1;	
 		}else if i==2{
-			player[i].x=1880;
+			player[i].x=1792;
 			player[i].y=256;
 			player[i].knife_=false;
 			player[i].health_=100;				
 			player[i].image_xscale=-1;			
 			player[i].active=true;
 		}else if i==3{
-			player[i].x=1880;
+			player[i].x=1792;
 			player[i].y=895;
 			player[i].knife_=false;
 			player[i].health_=100;				
@@ -81,6 +81,6 @@ for(var i=0;i<4;i++){
 	 }
 }	
 
-obj_knife.x=1010;
+obj_knife.x=950;
 obj_knife.y=544;
 obj_knife.Knife_find=false;

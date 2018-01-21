@@ -6,7 +6,8 @@ if(pad_num_>=0){
 		hinput_=round(gamepad_axis_value(pad_num_,gp_axislh));
 		vinput_=gamepad_button_check_pressed(pad_num_,gp_face3);
 		kick=gamepad_button_check_pressed(pad_num_,gp_face2);
-		attack=gamepad_button_check_pressed(pad_num_,gp_face1);	
+		attack=gamepad_button_check_pressed(pad_num_,gp_face4);	
+		//
 	}else if (pad_type=="Dualshock"){
 		hinput_=round(gamepad_axis_value(pad_num_,gp_axislh));
 		vinput_=gamepad_button_check_pressed(pad_num_,gp_face1);

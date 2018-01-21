@@ -23,4 +23,7 @@ if(alarm[0]<=0){
 	layer_set_visible("EndGround",true);
 	scr_create_game();
 }
-
+if(global.mode_type==3){
+	view_set_xport(0,-obj_gush.x);
+	
+}

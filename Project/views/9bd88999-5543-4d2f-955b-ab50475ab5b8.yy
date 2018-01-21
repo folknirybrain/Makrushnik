@@ -8,7 +8,8 @@
         "6e900c6e-7959-4624-b705-e76bcbaae7aa",
         "cb8df81d-ee9d-469e-b9ae-1e6c29a99175",
         "3e7c60ab-96ab-4b2a-99ac-1ad8725dc6df",
-        "f503efeb-4cc0-4cc9-a692-86acfdd2f120"
+        "f503efeb-4cc0-4cc9-a692-86acfdd2f120",
+        "fbf2a5f5-cb36-4e64-b050-700168f8d64a"
     ],
     "filterType": "GMObject",
     "folderName": "Group_Game",

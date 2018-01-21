@@ -2,12 +2,27 @@
 // You can write your code in this edito
 if active{
 	scr_move(pad_num);
+}else{
+	hinput_=0;
+	vinput_=0;
+	kick=0;
+	attack=0;
 }
 
 if(AI=="idle"){
 	if (hinput_!=0){	
-		hspeed_+=hinput_*acceleration_;
-		hspeed_=clamp(hspeed_,-max_speed,max_speed);	
+		if(global.mode_type!=2){
+			hspeed_+=hinput_*acceleration_;
+			hspeed_=clamp(hspeed_,-max_speed,max_speed);	
+		}else{
+			if(!knife_){
+				hspeed_+=hinput_*acceleration_;
+				hspeed_=clamp(hspeed_,-max_speed,max_speed);	
+			}else{
+				hspeed_+=hinput_*acceleration_*2;
+				hspeed_=clamp(hspeed_,-max_speed*1.2,max_speed*1.2);	
+			}
+		}
 	}else{
 		hspeed_=lerp(hspeed_,0,0.5);
 	}	
@@ -112,10 +127,6 @@ if(AI=="panch"){
 	}
 }
 
-
-
-
-
 if(AI=="down"){
 	sprite_index=asset_get_index("spr_"+sprite_id_+"_general_run");
 	image_speed=0;
@@ -135,6 +146,28 @@ if(AI=="down"){
 		AI="idle";
 	}
 		
+}
+
+if(global.mode_type!=3){
+if(x<-abs(sprite_width/2))
+{
+	x=x+abs(sprite_width/2)+window_get_width();
+	
+}else if(x>window_get_width()+abs(sprite_width/2))
+{
+	x=x-abs(sprite_width/2)-window_get_width();
+	
+}
+}
+
+if(y>1080){
+	hspeed_=0;
+	vspeed_=0;
+	gravity_=0;
+	acceleration_=1.5;	
+	hinput_=0;
+	vinput_=0;
+	active=false;
 }
 
 if(knife_){

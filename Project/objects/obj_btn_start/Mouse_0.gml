@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-switch obj_start_game.mode_type
+switch global.mode_type
 	{
 		case 1:
 		alarm[0]=20;
@@ -9,6 +9,11 @@ switch obj_start_game.mode_type
 		
 		break;
 		case 2:
-		room_goto(2);
+		alarm[0]=20;
+		layer_set_visible("Backgrounds_2",true);
+		break;
+		case 3:
+		alarm[0]=20;
+		layer_set_visible("Backgrounds_2",true);
 		break;
 	}
