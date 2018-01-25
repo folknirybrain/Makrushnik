@@ -15,30 +15,44 @@ if(global.game_session==0){
 	h3.image_xscale=1;
 	h4.image_xscale=1;
 }
+var right_up_x=window_get_width()-3*32;
+var right_up_y=8*32;
+
+var right_down_x=window_get_width()-3*32;
+var right_down_y=window_get_height()-6*32;
+
+var left_up_x=4*32;
+var left_up_y=8*32;
+
+var left_down_x=4*32;
+var left_down_y=window_get_height()-6*32;
+
+//show_debug_message(string(spr_wall.)+"!!!!!!!!!!!!!!!!!!!!!")
+
 for(var i=0;i<4;i++){	
 	if !(instance_exists(player[i])){   		
 		if i==0{
-			player[i] = instance_create_layer(100,256,"Characters",obj_players);	
+			player[i] = instance_create_layer(left_up_x,left_up_y,"Characters",obj_players);	
 			player[i].sprite_id_="yellow";	
 			player[i].pad_num=-1;//uslovno keyboard
 			player[i].active=true;
 			
 			
 		}else if i==1{
-			player[i] = instance_create_layer(100,895,"Characters",obj_players);	//100,895,
+			player[i] = instance_create_layer(left_down_x,left_down_y,"Characters",obj_players);	//100,895,
 			player[i].sprite_id_="red";	
 			player[i].pad_num=noone;
 			player[i].active=true;
 			
 			
 		}else if i==2{
-			player[i] = instance_create_layer(1792,256,"Characters",obj_players);	//1880,256
+			player[i] = instance_create_layer(right_up_x,right_up_y,"Characters",obj_players);	//1880,256
 			player[i].sprite_id_="blue";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;
 			player[i].active=true;
 		}else if i==3{
-			player[i] = instance_create_layer(1792,895,"Characters",obj_players);	//1880,895,
+			player[i] = instance_create_layer(right_down_x,right_down_y,"Characters",obj_players);	//1880,895,
 			player[i].sprite_id_="green";	
 			player[i].image_xscale=-1;
 			player[i].pad_num=noone;

@@ -4,11 +4,23 @@
 draw_set_colour(c_blue);
 draw_set_font(AAA);
 draw_text(140,30,string(player[0].score_));
+if(player[0].motivation!=""){
+	draw_sprite(asset_get_index("icon_"+player[0].motivation),1,40,10);
+}
 draw_text(690,30,string(player[1].score_));
+if(player[1].motivation!=""){
+	draw_sprite(asset_get_index("icon_"+player[1].motivation),1,590,10);
+}
 draw_text(1220,30,string(player[2].score_));
+if(player[2].motivation!=""){
+	draw_sprite(asset_get_index("icon_"+player[2].motivation),1,1120,10);
+}
 draw_text(1700,30,string(player[3].score_));
-draw_text(1000,500,string(global.mode_type));
-draw_text(1000,600,string(view_xport[0]));
+if(player[3].motivation!=""){
+	draw_sprite(asset_get_index("icon_"+player[3].motivation),1,1600,10);
+}
+//draw_text(1000,500,string(global.mode_type));
+//draw_text(1000,600,string(typeof(player[0].motivation)));
 //draw_text(1000,700,string(player[0].x));
 /*
 var j=0;

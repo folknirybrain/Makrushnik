@@ -8,7 +8,7 @@ obj_btn_start.image_speed=0;
 obj_btn_mode1.image_index=0;
 obj_btn_mode1.image_speed=0;
 
-obj_btn_mode_gush.image_index=0;
+obj_btn_mode_gush.image_index=1;
 obj_btn_mode_gush.image_speed=0;
 
 obj_btn_mode2.image_index=0;

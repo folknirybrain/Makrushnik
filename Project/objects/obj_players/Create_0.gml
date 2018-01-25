@@ -20,7 +20,8 @@ health_=100;
 hspeed_push=0;
 active=true;
 score_=0;
-
+goal=noone;
+motivation="";
 
 
 pad_num=0;

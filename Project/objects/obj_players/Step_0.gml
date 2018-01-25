@@ -149,18 +149,17 @@ if(AI=="down"){
 }
 
 if(global.mode_type!=3){
-if(x<-abs(sprite_width/2))
-{
-	x=x+abs(sprite_width/2)+window_get_width();
+	if(x<-abs(sprite_width/2))
+	{
+		x=x+abs(sprite_width/2)+window_get_width();
 	
-}else if(x>window_get_width()+abs(sprite_width/2))
-{
-	x=x-abs(sprite_width/2)-window_get_width();
-	
-}
+	}else if(x>window_get_width()+abs(sprite_width/2))
+	{
+		x=x-abs(sprite_width/2)-window_get_width();	
+	}
 }
 
-if(y>1080){
+if(y>window_get_height()){
 	hspeed_=0;
 	vspeed_=0;
 	gravity_=0;
@@ -168,6 +167,7 @@ if(y>1080){
 	hinput_=0;
 	vinput_=0;
 	active=false;
+	motivation="";
 }
 
 if(knife_){
@@ -175,3 +175,7 @@ if(knife_){
 	obj_knife.y=y-120;
 }
 	
+if(goal!=noone){
+	goal.x=x+20;
+	goal.y=y-120;
+}

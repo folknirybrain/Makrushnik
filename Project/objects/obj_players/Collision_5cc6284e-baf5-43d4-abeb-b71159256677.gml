@@ -1,6 +1,6 @@
 /// @description collision_with_knife
 // You can write your code in this editor
-if((AI=="idle"||AI=="panch")&&!knife_&&!other.Knife_find){
+if((AI=="idle"||AI=="panch")&&!knife_&&!other.Knife_find&&goal==noone){
 	knife_=true;
 	other.Knife_find=true;
 	if(global.mode_type==2){
