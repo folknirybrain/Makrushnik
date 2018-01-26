@@ -98,3 +98,34 @@ for(var i=0;i<4;i++){
 obj_knife.x=950;
 obj_knife.y=544;
 obj_knife.Knife_find=false;
+
+for(var i=0;i<gamepad_get_device_count();i++){
+	if(gamepad_is_connected(i)){
+		for(var j=0;j<4;j++){
+			if(player[j].pad_num==noone){
+				player[j].pad_num=i;
+				//show_debug_message(string(i)+"player__!_!_!_!_!_!__!_!_!_")
+				player[j].pad_type=gamepad_get_description(i);						
+						
+				var desc=string_lower(player[j].pad_type);
+			// Xbox	
+				if (string_pos("box",desc) || string_pos("360",desc) || string_pos("f310",desc) || string_pos("f710",desc))
+				{
+					player[j].pad_type="Xbox"
+				}
+				// Dualshock
+				else if (string_pos("ps",desc) || string_pos("station",desc)||string_pos("dualshock",desc))
+				{
+					player[j].pad_type="Dualshock"
+				}
+				// Other
+				else if string_pos("pad",desc)|| string_pos("USB",desc)
+				{
+					player[j].pad_type="Other"
+				}
+				break;
+			}
+			
+		}
+	}
+}

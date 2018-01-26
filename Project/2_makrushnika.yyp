@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "405c33fb-0e4c-4483-8398-9701890fa936",
+            "Value": {
+                "id": "59b2b644-9767-45e5-b535-732f037985ae",
+                "resourcePath": "objects\\obj_clock\\obj_clock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42962cd7-7ea7-4174-9758-5a3c8994fead",
             "Value": {
                 "id": "449d4502-79ed-44b3-989f-a8291c51b3f0",

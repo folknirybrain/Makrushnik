@@ -96,13 +96,19 @@ if(place_meeting(x,y+vspeed_,obj_wall)){
 
 y+=vspeed_
 
-if(kick&&AI!="panch"&&AI!="down"){
+if(kick&&AI!="panch"&&AI!="down"&&!knife_){
 	AI="panch";	
 	kick_power=kick_power_max;
 	alarm[3]=100;	
 	//var time_diff=date_current_datetime()-obj_main.creation_time;
 	//show_debug_message(string_format(time_diff,10,10));
 	
+}
+if(vspeed_==0&&kick&&AI!="panch"&&AI!="down"&&knife_){
+	knife_=false;
+	obj_knife.Knife_find=false;
+	obj_knife.x=x+50*direction_;
+	obj_knife.y=y-20;
 }
 
 

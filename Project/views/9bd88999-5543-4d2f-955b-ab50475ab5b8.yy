@@ -12,7 +12,8 @@
         "fbf2a5f5-cb36-4e64-b050-700168f8d64a",
         "12867ce1-2c8e-4d1e-8ef8-7e912e2313cc",
         "ee737c38-907c-4bc8-ae74-280cdadd4a76",
-        "9745930c-232a-4877-8bc5-76a049ed0986"
+        "9745930c-232a-4877-8bc5-76a049ed0986",
+        "405c33fb-0e4c-4483-8398-9701890fa936"
     ],
     "filterType": "GMObject",
     "folderName": "Group_Game",

@@ -5,7 +5,6 @@ h3.image_xscale=player[2].health_/100;
 h4.image_xscale=player[3].health_/100;
 if(alarm[0]<=0){
 	var end_=sign(player[0].health_)+sign(player[1].health_)+sign(player[2].health_)+sign(player[3].health_)
-
 	if(end_==1){
 		//global.Save=true;
 		//game_save("Save.dat")

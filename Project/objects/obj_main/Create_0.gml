@@ -15,7 +15,7 @@ var center_up_y=8*32;
 var center_mid_x=window_get_width()/2;
 var center_mid_y=window_get_height()/2;
 var center_down_x=window_get_width()/2;
-var center_down_y=window_get_height()-10*32;
+var center_down_y=window_get_height()-9*32;
 var left_up_x=4*32;
 var left_up_y=8*32;
 var left_mid_x=window_get_width()/4;
@@ -27,6 +27,9 @@ var left_mid_x2=window_get_width()/4;
 var left_mid_y2=window_get_height()-13*32;
 var right_mid_x2=window_get_width()-window_get_width()/4;
 var right_mid_y2=window_get_height()-13*32;
+
+
+   
 
 if(global.mode_type!=3){
 	array_point_knife[0,0]=right_up_x;
@@ -67,7 +70,7 @@ if(global.mode_type!=3){
 	
 }
 
-
+alarm[1]=100;
 
 
 
