@@ -95,8 +95,7 @@ for(var i=0;i<4;i++){
 	 }
 }	
 
-obj_knife.x=950;
-obj_knife.y=544;
+
 obj_knife.Knife_find=false;
 
 for(var i=0;i<gamepad_get_device_count();i++){

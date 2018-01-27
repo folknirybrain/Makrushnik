@@ -1,0 +1,11 @@
+if(file_exists("game_settings.ini")){
+	ini_open("game_settings.ini");
+	global.display_width=ini_read_real("settings","width",1920);
+	global.display_height=ini_read_real("settings","height",1080);
+	ini_close();
+	scr_resolution();
+}else{
+	global.display_height=1920;
+	global.display_width=1080;
+	scr_resolution();
+}
