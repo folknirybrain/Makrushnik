@@ -153,19 +153,19 @@ if(AI=="down"){
 	}
 		
 }
-
+show_debug_message(string(x));
 if(global.mode_type!=3){
 	if(x<-abs(sprite_width/2))
 	{
-		x=x+abs(sprite_width/2)+window_get_width();
+		x=x+abs(sprite_width/2)+1920;
 	
-	}else if(x>window_get_width()+abs(sprite_width/2))
+	}else if(x>1920+abs(sprite_width/2))
 	{
-		x=x-abs(sprite_width/2)-window_get_width();	
+		x=x-abs(sprite_width/2)-1920;	
 	}
 }
 
-if(y>window_get_height()){
+if(y>1080){
 	hspeed_=0;
 	vspeed_=0;
 	gravity_=0;
