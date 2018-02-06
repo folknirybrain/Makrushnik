@@ -20,3 +20,4 @@ if(displayWidht>=displayHeight){
 }
 
 surface_resize(application_surface,width,height);
+window_set_fullscreen(true);

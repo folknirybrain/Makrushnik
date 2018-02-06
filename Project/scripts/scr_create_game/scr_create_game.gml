@@ -15,17 +15,17 @@ if(global.game_session==0){
 	h3.image_xscale=1;
 	h4.image_xscale=1;
 }
-var right_up_x=window_get_width()-3*32;
+var right_up_x=1920-3*32;
 var right_up_y=8*32;
 
-var right_down_x=window_get_width()-3*32;
-var right_down_y=window_get_height()-6*32;
+var right_down_x=1920-3*32;
+var right_down_y=1080-6*32;
 
 var left_up_x=4*32;
 var left_up_y=8*32;
 
 var left_down_x=4*32;
-var left_down_y=window_get_height()-6*32;
+var left_down_y=1080-6*32;
 
 //show_debug_message(string(spr_wall.)+"!!!!!!!!!!!!!!!!!!!!!")
 
@@ -59,6 +59,7 @@ for(var i=0;i<4;i++){
 			player[i].active=true;
 			
 		}	
+		show_debug_message("НЕ существует  "+string(right_up_x)+string(window_get_width()));
      }else{
 		
 		 if i==0{
