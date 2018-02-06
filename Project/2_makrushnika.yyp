@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "65fc436f-11a2-44d6-a17b-83860b091c1b",
+            "Value": {
+                "id": "ad28e36b-71f7-4efc-ac80-8bedc947fc1a",
+                "resourcePath": "sprites\\spr_effect_watchtower_tower_hole\\spr_effect_watchtower_tower_hole.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67b7337d-4043-4af7-92e2-9e00174b442f",
             "Value": {
                 "id": "61a1a347-e9e4-48f9-a7ac-243cb028d2ae",
@@ -755,6 +763,14 @@
             "Value": {
                 "id": "113f8de2-9afd-4393-8e2e-a6c007a26be4",
                 "resourcePath": "sprites\\spr_yellow_general_attack\\spr_yellow_general_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5df3d68-e168-4573-8856-e61b723cc97c",
+            "Value": {
+                "id": "75725d6f-f479-4755-a199-69694a9b3b17",
+                "resourcePath": "sprites\\spr_watchtower_portal_hole\\spr_watchtower_portal_hole.yy",
                 "resourceType": "GMSprite"
             }
         },
