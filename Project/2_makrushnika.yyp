@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "123f6bc5-3e4e-4054-9e1d-982a86c862f7",
+            "Value": {
+                "id": "9c925906-f827-4828-83c0-6a1c1249642f",
+                "resourcePath": "sprites\\spr_effect_watchtower_portal\\spr_effect_watchtower_portal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12867ce1-2c8e-4d1e-8ef8-7e912e2313cc",
             "Value": {
                 "id": "c08dda4f-227d-46a5-b69e-c1fb8d10fedc",
@@ -183,6 +191,22 @@
             }
         },
         {
+            "Key": "29dbec10-8052-4d16-bdc5-0a3b8b76c04f",
+            "Value": {
+                "id": "e0bd96c2-fcdd-40f8-a3b5-9a87a949d4b1",
+                "resourcePath": "sprites\\spr_watchtower_top_wood\\spr_watchtower_top_wood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2ccd37f0-d8e7-42b7-a894-990e8e2dc10b",
+            "Value": {
+                "id": "82ea5a09-eb54-43da-b944-31217fb94890",
+                "resourcePath": "sprites\\spr_watchtower_small_platform\\spr_watchtower_small_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2dd80cd2-34a2-4b2d-93ca-2143bffa3025",
             "Value": {
                 "id": "5f3a0009-b1d2-4c38-aab7-b1f0e69dcb6b",
@@ -211,6 +235,14 @@
             "Value": {
                 "id": "d8e115aa-3322-4829-8d68-7773632d6c2b",
                 "resourcePath": "sprites\\icon_good\\icon_good.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "35835fe2-3c28-4d64-a56f-fd58cbfe3a31",
+            "Value": {
+                "id": "3161c220-5fcd-40e0-a97a-195e785587bc",
+                "resourcePath": "sprites\\spr_watchtower_door\\spr_watchtower_door.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -267,6 +299,14 @@
             "Value": {
                 "id": "449d4502-79ed-44b3-989f-a8291c51b3f0",
                 "resourcePath": "sprites\\spr_bad\\spr_bad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "42aae211-5e19-4ac7-805a-79fa88b9fde7",
+            "Value": {
+                "id": "cd37e33c-44a5-48bc-8772-4273f7118248",
+                "resourcePath": "sprites\\spr_watchtower_tower\\spr_watchtower_tower.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -367,14 +407,6 @@
             }
         },
         {
-            "Key": "7139faaa-bfe0-435e-9683-806fc71f1ae8",
-            "Value": {
-                "id": "db240612-b751-4ea8-8742-ecb309e83440",
-                "resourcePath": "objects\\obj_castle_wood_platform\\obj_castle_wood_platform.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "731aacf5-04b7-42a8-9585-ab91101d2ddc",
             "Value": {
                 "id": "ca2f3680-3ea0-469e-a25d-3296ee7dd46c",
@@ -423,6 +455,14 @@
             }
         },
         {
+            "Key": "7ccf97a0-4e60-4be5-96eb-c2a610cafca3",
+            "Value": {
+                "id": "a5e88897-1698-414a-996a-ec0a05df3017",
+                "resourcePath": "sprites\\spr_watchtower_middle_platform\\spr_watchtower_middle_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7d1d3a47-9900-457b-a299-5e556eed5717",
             "Value": {
                 "id": "7fe66185-390f-4f93-8568-c1d2a8bd12c5",
@@ -452,6 +492,14 @@
                 "id": "a23f1238-1c56-48ca-975e-2e6a5cdda3f8",
                 "resourcePath": "views\\84f7f013-bbb7-4991-bb99-ecd0fd04916c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "85bb6e56-5cf5-4394-a660-a247be482eec",
+            "Value": {
+                "id": "ebdcdb31-42a9-4550-8ae5-c23e4cbcaed1",
+                "resourcePath": "sprites\\spr_watchtower_gorn\\spr_watchtower_gorn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,19 +551,19 @@
             }
         },
         {
-            "Key": "a3970e41-c16d-4e82-a1d3-0e3693b18b36",
-            "Value": {
-                "id": "18708bce-838e-42f6-97f9-7ce49c5f44e4",
-                "resourcePath": "sprites\\spr_castle_wood_platform\\spr_castle_wood_platform.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a4290911-7f3c-433b-b4ba-9f84d0054268",
             "Value": {
                 "id": "53945dce-5332-4a40-8d4e-a5ec864cd075",
                 "resourcePath": "views\\a4290911-7f3c-433b-b4ba-9f84d0054268.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a47e060f-751e-493a-985c-48bf95ec5c08",
+            "Value": {
+                "id": "4b77000e-155a-4090-aded-b0eb0dc976b9",
+                "resourcePath": "sprites\\spr_watchtower_pipe\\spr_watchtower_pipe.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -543,10 +591,26 @@
             }
         },
         {
+            "Key": "aaee2b7f-39cd-42a3-b5a3-01b5306f1df5",
+            "Value": {
+                "id": "35cd065e-cfff-478f-ac40-886a8e8b758e",
+                "resourcePath": "sprites\\spr_watchtower_organ\\spr_watchtower_organ.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac828645-9e09-4bc4-abc3-736c3a7e76b2",
             "Value": {
                 "id": "ab12fc8c-07f4-4bed-ba10-1b0c84568d59",
                 "resourcePath": "sprites\\spr_red_general_idle\\spr_red_general_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b041d25c-f571-42b7-88b3-cc71ae923707",
+            "Value": {
+                "id": "eed330f4-11bb-4824-ba4c-7412430c9d41",
+                "resourcePath": "sprites\\spr_watchtower_big_cloth\\spr_watchtower_big_cloth.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -575,6 +639,14 @@
             }
         },
         {
+            "Key": "b5489c4e-0e23-456a-a205-40a690696955",
+            "Value": {
+                "id": "521a198d-aef6-4f2f-82e5-b32f2b2d4e44",
+                "resourcePath": "views\\b5489c4e-0e23-456a-a205-40a690696955.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b714b1cc-9626-40a9-8ee7-732b954068a2",
             "Value": {
                 "id": "9f257d01-b59c-4764-b599-b5f743d84942",
@@ -587,6 +659,14 @@
             "Value": {
                 "id": "ff5790cd-86b0-46a1-9ec3-cb12cf8ea307",
                 "resourcePath": "sprites\\icon_blue\\icon_blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7e2177a-ca48-4ba4-98e6-bfcd0cbcfcb5",
+            "Value": {
+                "id": "801e706d-c9c8-4e1c-86a6-46c98c809c51",
+                "resourcePath": "sprites\\spr_watchtower_small_cloth\\spr_watchtower_small_cloth.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -692,6 +772,22 @@
                 "id": "9085356c-f832-4847-a50d-53b3a1fcd334",
                 "resourcePath": "views\\d8cb416d-cc33-4a90-b456-f2de29662ab9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da3ed4e2-2712-49a3-ad66-fafd3f9c6469",
+            "Value": {
+                "id": "3642ad1d-7d8a-4a50-8357-b309a83ec112",
+                "resourcePath": "sprites\\spr_watchtower_bgr\\spr_watchtower_bgr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "da6b3b4c-8932-41e5-a3d2-b7f94987069e",
+            "Value": {
+                "id": "c9639cdf-1759-436c-ada7-ede6bfb85f77",
+                "resourcePath": "sprites\\spr_watchtower_bottom\\spr_watchtower_bottom.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -819,6 +915,14 @@
             "Value": {
                 "id": "6450cb21-718f-4836-8a04-820af4798467",
                 "resourcePath": "sprites\\spr_yellow_general_idle\\spr_yellow_general_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe3272e7-16b4-47cd-bc3d-87bf5dba9da6",
+            "Value": {
+                "id": "c566d62d-4f24-4b1c-bcfe-0fcbf10fbda4",
+                "resourcePath": "sprites\\spr_watchtower_portal\\spr_watchtower_portal.yy",
                 "resourceType": "GMSprite"
             }
         },
